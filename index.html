@@ -5,29 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <div class="container">
+    <main>
+      <picture>
+        <source media="(min-width: 440px)" srcset="./images/image-header-desktop.jpg">
+        <img src="./images/image-header-mobile.jpg" alt="">
+      </picture>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+      
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+      </p>
+    </main>
+    
+    <div class="stats">
+      <article>
+        <h2>10k+</h2> 
+        <p>companies</p>
+      </article>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <article>
+        <h2>314</h2> 
+        <p>templates</p>
+      </article>
+
+      <article>
+        <h2>12m+</h2> 
+        <p>queries</p>
+      </article>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://jefersond91-stats-preview-card-co.netlify.app/">Jeferson Mesa</a>.
   </div>
 </body>
 </html>
