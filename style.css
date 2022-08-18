@@ -19,9 +19,8 @@ img{
 
 body{
   font-family: 'Inter', sans-serif;
-  font-family: 'Lexend Deca', sans-serif;background-color: var(--Very-dark-blue-main-background);
+  background-color: var(--Very-dark-blue-main-background);
   color: var(--White-main-heading-stats);
-  max-height: calc(100vh - 10px);
 
   display: flex;
   flex-direction: column;
@@ -33,13 +32,49 @@ body{
 .container{
   background-color: var(--Dark-desaturated-blue-card-background);
   max-width: 500px;
-  margin: 1.5rem;
+  height: 70%;
+  margin: 4rem 1.5rem;
   border-radius: 0.5rem;
 }
 
-.container main img {
+.container .main-img img {
   margin-bottom: 2rem;
   border-radius: 0.5rem 0.5rem 0 0;
+  height: 250px;
+  background-color: ;
+}
+
+.container h1{
+  margin-bottom: 1rem;
+  padding: 0 0.4rem 0;
+  font-weight: 700;
+}
+
+.container h1 span{
+  color: var(--Soft-violet-accent);
+}
+
+.container main>p{
+  font-size: 15px;
+  color: var(--Slightly-transparent-white-main-paragraph);
+  padding: 0 1.8rem 1.5rem;
+  line-height: 1.6;
+}
+
+.container .stats article{
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.container .stats article:first-child h2{
+  text-transform: lowercase;
+}
+
+.container .stats p{
+  color: var(--Slightly-transparent-white-stat-headings);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
 }
 
 .attribution { 
